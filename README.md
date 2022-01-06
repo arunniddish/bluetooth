@@ -32,7 +32,7 @@ Step13: Thats it! After the modifications are made then its good to work.!
 # bluetooth LED_desktop_gui
 Note: Similar setup to the above "bluetooth" readme. This one has few changes which brings up the following update:
       
-      **1. Unique Pin number can be setup for RX and TX of bluetooth chip.**
+      1. Unique Pin number can be setup for RX and TX of bluetooth chip.
          
 	 Instead of using the default pins of RX and TX, different pin number can be set which acts as virtual ports. 
 	 
@@ -46,9 +46,9 @@ Note: Similar setup to the above "bluetooth" readme. This one has few changes wh
          Now codes can be uploaded without removing the bluetooth pins from arduino.
 	 
 	 
-      **2. Dual Control - via Serial Monitor & via Bluetooth**
+      2. Dual Control - via Serial Monitor & via Bluetooth
          
-	 Setting up unique pin number for the bluetooth chip also enables us to control the LED from both **Serial Monitor** and **Bluetooth**.
+	 Setting up unique pin number for the bluetooth chip also enables us to control the LED from both Serial Monitor and Bluetooth.
 	 
 	 if (BT.available() || Serial.available())
   	 // if text arrived in from BT serial...
