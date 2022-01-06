@@ -26,5 +26,6 @@ Step11: If suppose you have created a code to turn on and off a LED light by sen
 
 Step12: But you will notice that no changes takes place. So the mistake is that the TX pin of bluetooth is connected to TX pin of arduino and similar for RX pin.
 The TX pin of bluetooth should be connected to RX pin of bluetooth since the transmission of bluetooth is the recieving of arduino borad.
+
 Step13: Thats it! After the modifications are made then its good to work.!
 		
