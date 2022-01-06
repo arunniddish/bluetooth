@@ -29,3 +29,30 @@ The TX pin of bluetooth should be connected to RX pin of bluetooth since the tra
 
 Step13: Thats it! After the modifications are made then its good to work.!
 		
+# bluetooth LED_desktop_gui
+Note: Similar setup to the above "bluetooth" readme. This one has few changes which brings up the following update:
+      
+      **1. Unique Pin number can be setup for RX and TX of bluetooth chip.**
+         
+	 Instead of using the default pins of RX and TX, different pin number can be set which acts as virtual ports. 
+	 
+	 #include <SoftwareSerial.h>
+         SoftwareSerial BT(3, 4); // BT(RX,TX)
+         // creates a "virtual" serial port/UART
+         // connect BT module TX to 3
+         // connect BT module RX to 4
+	 
+	 This also eliminates the problem of plugging out the bluetooth chip from the arduino board before uploading the code.
+         Now codes can be uploaded without removing the bluetooth pins from arduino.
+	 
+	 
+      **2. Dual Control - via Serial Monitor & via Bluetooth**
+         
+	 Setting up unique pin number for the bluetooth chip also enables us to control the LED from both **Serial Monitor** and **Bluetooth**.
+	 
+	 if (BT.available() || Serial.available())
+  	 // if text arrived in from BT serial...
+  	 // if text arrived in from arduino serial...
+  	 {
+           a=(BT.read());
+           b = (Serial.read());
