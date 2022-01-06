@@ -44,8 +44,7 @@ Note: Similar setup to the above "bluetooth" readme. This one has few changes wh
 	 
 	 This also eliminates the problem of plugging out the bluetooth chip from the arduino board before uploading the code.
          Now codes can be uploaded without removing the bluetooth pins from arduino.
-	 
-	 
+	 	 
       2. Dual Control - via Serial Monitor & via Bluetooth
          
 	 Setting up unique pin number for the bluetooth chip also enables us to control the LED from both Serial Monitor and Bluetooth.
